@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #0a2540;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h2 {
+  font-size: 22px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.hero img {
+  width: 160px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 32px;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #0a2540;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #133b6d;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section h1,
+.section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card i {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #0a2540;
+}
+
+footer {
+  background: #0a2540;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #0a2540;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  font-size: 24px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+.card, .hero, header {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.dark {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.dark header,
+.dark footer {
+  background: #000;
+}
+
+.dark .card {
+  background: #1e1e1e;
+  color: #fff;
+}
